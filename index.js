@@ -10,6 +10,10 @@ const app = express();
 
 app.use(cors());
 
+app.get("/", (req, res) => {
+  res.send("Backend WeatherApp is running");
+});
+
 app.get("/api/weather", async (req, res) => {
   const { city } = req.query;
   const apiKey = process.env.OPENWEATHER_API_KEY;
