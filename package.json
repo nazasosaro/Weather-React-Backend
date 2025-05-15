@@ -1,10 +1,10 @@
-back{
+{
   "name": "weather-react-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start:backend": "nodemon index.js",
+    "start": "nodemon index.js",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
